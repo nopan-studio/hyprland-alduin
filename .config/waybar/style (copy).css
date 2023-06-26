@@ -1,0 +1,241 @@
+* {
+    border: none;
+    border-radius: 0px;
+    /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
+    font-family: terminus, FontAwesome, Noto Sans CJK;
+    font-size: 12px;
+    font-style: normal;
+    min-height: 16px;
+}
+
+window#waybar {
+    background: rgba(21, 21, 21, 0.8);
+    border-top: 2px solid #212121;
+    color: #dfdfaf
+}
+
+#workspaces {
+	background: transparent;
+	margin: 5px 5px 5px 5px;
+  	padding: 0px 5px 0px 5px;
+	border-radius: 0px;
+ 	border: solid 0px #f4d9e1;
+  	font-weight: normal;
+  	font-style: normal;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+    border-radius: 0px;
+    color: #dfdfaf;
+}
+
+#workspaces button.active {
+    color: #E0B188;
+    background-color: transparent;
+    border-radius: 2px;
+    border-width:2px;
+    border-style:solid;
+    border-top:0px;
+    border-left:0px;
+    border-right:0px;
+}
+
+#workspaces button:hover {
+	color: #af5f5f;
+	background: transparent;
+    	border-width:2px;
+    	border-style:solid;
+        border-radius: 2px;
+    	border-top:0px;
+    	border-left:0px;
+    	border-right:0px;
+    	border-bottom:0px;
+}
+
+#custom-date, #clock, #battery, #pulseaudio, #network, #custom-randwall, #custom-launcher,#cpu, #memory {
+	background: transparent;
+	padding: 5px 5px 5px 5px;
+	margin: 5px 5px 5px 5px;
+  	border-radius: 8px;
+  	border: solid 0px #f4d9e1;
+}
+
+#custom-date {
+	color: #E0B188;
+}
+
+#custom-power {
+	color: #24283b;
+	background-color: #db4b4b;
+	border-radius: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding: 5px 10px;
+}
+
+#tray {
+    background: #212121;
+    border-radius: 14px;
+    padding:5px;
+    margin: 5px 0px 5px 0px;
+    /*border-right: solid 1px #282738;*/
+}
+
+#clock {
+    color: #dfdfaf;
+    background-color: #212121;
+    border-radius: 0px 0px 0px 24px;
+    padding-left: 15px;
+    padding-right: 13px;
+    margin-right: -5px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*border-left: solid 1px #282738;*/
+}
+
+
+#battery {
+    color: #dfdfaf;
+}
+
+#battery.charging {
+    color: #87af5f;
+}
+
+#battery.warning:not(.charging) {
+    color: #af5f5f;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#backlight {
+    color: #dfdfaf;
+    border-radius: 0px 0px 0px 0px;
+    margin-left: 5px;
+    margin-right: -2px;
+    padding: 0px 0px;
+}
+
+#network {
+    color: #dfdfaf;
+    border-radius: 8px;
+    margin-right: 3px;
+}
+
+#pulseaudio {
+    color: #dfdfaf;
+    margin-left:-5px;
+    margin-right: -3px;
+}
+
+#pulseaudio.muted {
+    background: transparent;
+    color: #928374;
+}
+
+#custom-randwall {
+    color: #f4d9e1;
+    border-radius: 8px;
+    margin-right: 0px;
+}
+
+#custom-launcher {
+    color: #dfdfaf;
+    background-color: #212121;
+    border-radius: 0px 24px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0 15px 0 10px;
+    /*border-right: solid 1px #282738;*/
+}
+
+#custom-launcher button:hover {
+    background-color: #212121;
+    color: transparent;
+    border-radius: 8px;
+    margin-right: -5px;
+    margin-left: 10px;
+}
+
+#custom-playerctl {
+	background: #191919;
+	padding-left: 15px;
+  padding-right: 14px;
+	border-radius: 16px;
+  /*border-left: solid 1px #282738;*/
+  /*border-right: solid 1px #282738;*/
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
+
+#custom-playerlabel {
+    background: transparent;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-radius: 16px;
+    /*border-left: solid 1px #282738;*/
+    /*border-right: solid 1px #282738;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#window {
+    background: #282828;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 16px;
+    /*border-left: solid 1px #282738;*/
+    /*border-right: solid 1px #282738;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#custom-wf-recorder {
+    padding: 0 20px;
+    color: #e5809e;
+    background-color: #1E1E2E;
+}
+
+#cpu {
+    /*background-color: #212121;*/
+    color: #dfdfaf;
+    margin-right: -5px;
+    /*border-radius: 14px;*/
+}
+
+#memory {
+    color: #dfdfaf;
+    margin-right: -5px;
+}
+
+#disk {
+    background-color: #282828;
+    /*color: #8EC07C;*/
+    border-radius: 16px;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+}
+
+#custom-hyprpicker {
+    background-color: #282828;
+    /*color: #8EC07C;*/
+    border-radius: 16px;
+    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0px 11px 0px 9px;
+    font-weight: bold;
+}
